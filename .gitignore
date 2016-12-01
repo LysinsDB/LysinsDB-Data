@@ -14,3 +14,5 @@
 .LSOverride
 # Thumbnails
 ._*
+
+*.sublime-workspace
