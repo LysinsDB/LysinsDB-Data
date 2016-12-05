@@ -60,3 +60,20 @@ def post_request(url, data, pretty=False):
     if isinstance(data, (list, tuple)):
         data = ",".join(data)
     return make_request(full_url, data.encode())
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
+    parser.add_argument('-e', type=str, default=None, action='store', help='the pdbid')
+    parser.add_argument('-p', type=str, default=None, action='store', help='the comma-separated list of PDB(ids)')
+    args = parser.parse_args()
+
+    if args.e:
+        response = get_request(SUMMARY, args.e, True)
+    elif args.p:
+        response = post_request(SUMMARY, args.p, True)
+    else:
+        parser.print_help()
+        sys.exit(1)
+    if response:
+        print('Printing information about — Proteins!')
+        print(response)
