@@ -132,3 +132,37 @@ var license    = [
 ].map(function(s) {
   return s.replace(/\s+$/, '');
 }).join("\n");
+// ----------------------------------------------------------------------------------------------------------
+
+///------------------------------------
+// A function to register `dateFormat`.
+///------------------------------------
+function dateFormat(date, format) {
+  if (format === undefined) {
+    format = date;
+    date = new Date();
+  }
+  var map = {
+    "M": date.getMonth() + 1,
+    "d": date.getDate(),
+    "h": date.getHours(),
+    "m": date.getMinutes(),
+    "s": date.getSeconds(),
+    "q": Math.floor((date.getMonth() + 3) / 3),
+    "S": date.getMilliseconds()
+  };
+  format = format.replace(/([yMdhmsqS])(\1)*/g, function(all, t){
+    var v = map[t];
+    if (v !== undefined) {
+      if (all.length > 1) {
+        v = '0' + v;
+        v = v.substr(v.length-2);
+      }
+      return v;
+    } else if (t === 'y') {
+      return (date.getFullYear() + '').substr(4 - all.length);
+    }
+    return all;
+  });
+  return format;
+}
