@@ -14,3 +14,8 @@ __date__          = '04-12-2016'
 __copyright__     = "Copyright © 2006 - 2016, Prabhat Kumar. All rights reserved."
 __webserver__     = "http://sequomics.com/"
 __license__       = "http://sequomics.com/legal/apache-license.txt"
+
+# ————————————————————————————————————————————————————————————————————————————
+module            = 'get'
+purpose           = 'Get Proteins from http://www.rcsb.org/pdb/home/home.do'
+# ————————————————————————————————————————————————————————————————————————————
