@@ -30,3 +30,8 @@ import sys
 import argparse
 
 PY3 = sys.version > '3'
+
+if PY3:
+  import urllib.request as urllib2
+else:
+  import urllib2
