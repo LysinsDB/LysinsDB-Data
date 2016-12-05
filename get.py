@@ -35,3 +35,6 @@ if PY3:
   import urllib.request as urllib2
 else:
   import urllib2
+  
+SERVER_URL        = "https://www.ebi.ac.uk/pdbe/api"
+SUMMARY           = "/pdb/entry/summary"
