@@ -1,0 +1,18 @@
+{
+  "array": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "boolean": true,
+  "null": null,
+  "number": 1234,
+  "object": {
+    "a": "b",
+    "c": "d",
+    "e": "f",
+    "g": "h"
+  },
+  "string": "Hello, World!"
+}
