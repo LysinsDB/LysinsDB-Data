@@ -38,3 +38,15 @@ else:
   
 SERVER_URL        = "https://www.ebi.ac.uk/pdbe/api"
 SUMMARY           = "/pdb/entry/summary"
+
+def make_request(url, data):
+    request = urllib2.Request(url)
+    try:
+        url_file = urllib2.urlopen(request, data)
+    except urllib2.HTTPError as e:
+        if e.code == 404:
+            print("[NOTFOUND %d] %s" % (e.code, url))
+        else:
+            print("[ERROR %d] %s" % (e.code, url))
+        return None
+    return url_file.read().decode()
