@@ -29,3 +29,6 @@
  * --/The Heart of Build System/-- of "LysinsDB®-Data".
  * ___________________________________________________________________________
  */
+
+
+// "disallowMultipleSpaces": {"allowEOLComments": true}
