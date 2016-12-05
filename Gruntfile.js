@@ -70,7 +70,7 @@ var boop       = chalk.gray;
 var build = {
   // Nonidentifier property names are quoted.
   "system"     : "SEED™",
-  "name"       : "Umeå",
+  "name"       : "Örebro",
   "year"       : "2015",
   "audience"   : "for all scientist and computational biologist."
 };
