@@ -93,3 +93,5 @@ var pkg  = JSON.parse(fs.readFileSync('./package.json', {
 var npm  = JSON.parse(fs.readFileSync('./secret.json', {
   encoding: "utf8"
 }));
+
+var message    = "SEED™ — Supported under Mac OS X and Linux only!";
