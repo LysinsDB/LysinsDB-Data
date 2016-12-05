@@ -19,3 +19,8 @@ __license__       = "http://sequomics.com/legal/apache-license.txt"
 module            = 'get'
 purpose           = 'Get Proteins from http://www.rcsb.org/pdb/home/home.do'
 # ————————————————————————————————————————————————————————————————————————————
+
+# Usage of —————— get.py —————————————————————————————————————————————————————
+# python get.py -e 3RDR
+# python get.py -p 3HMB,5FS5
+# ————————————————————————————————————————————————————————————————————————————
