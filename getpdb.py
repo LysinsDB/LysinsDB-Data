@@ -28,3 +28,4 @@ purpose           = 'Get Proteins from http://www.rcsb.org/pdb/home/home.do'
 
 # Load required modules, for SEED™ — Örebro.
 import os
+import sys
