@@ -54,3 +54,9 @@ def make_request(url, data):
 def get_request(url, arg, pretty=False):
     full_url = "%s/%s/%s?pretty=%s" % (SERVER_URL, url, arg, str(pretty).lower())
     return make_request(full_url, None)
+
+def post_request(url, data, pretty=False):
+    full_url = "%s/%s/?pretty=%s" % (SERVER_URL, url, str(pretty).lower())
+    if isinstance(data, (list, tuple)):
+        data = ",".join(data)
+    return make_request(full_url, data.encode())
