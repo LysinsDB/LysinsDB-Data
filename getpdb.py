@@ -77,3 +77,47 @@ def get_options():
       struct_fact = 1
 
   return pdb, mmCIF, struct_fact, args
+
+def main():
+  (pdb, mmCIF, struct_fact, args) = get_options()
+
+  for code in args:
+    code = code.lower()
+    # for — '-p'.
+    if (pdb == 1):
+      print colored("\nSEED™ — Örebro is downloading...", 'blue')
+      print "\nfor %s.pdb.gz .........." % (code),
+      url = 'ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/pdb%s.ent.gz' % code
+      filename = code + '.pdb.gz'
+      try:
+        urllib.urlretrieve(url, filename)
+        print "Uncompressing %s.pdb.gz" % code
+        os.system("gunzip %s.pdb.gz" % code)
+      except:
+        print "Error retrieving %s" % url
+        
+    elif (mmCIF == 1):
+      # for — '-c'.
+      print colored("\nSEED™ — Örebro is downloading...", 'blue')
+      print "\nfor %s.cif.gz .........." % (code),
+      url = 'ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/mmCIF/%s.cif.gz' % code
+      filename = code + '.cif.gz'
+      try:
+        urllib.urlretrieve(url, filename)
+        print "Uncompressing %s.cif.gz" % code
+        os.system("gunzip %s.cif.gz" % code)
+      except:
+        print "Error retrieving %s" % url
+
+    if (struct_fact == 1):
+      # for — '-s'.
+      print colored("\nSEED™ — Örebro is downloading...", 'blue')
+      print "\nfor r%ssf.ent.gz .........." % (code),
+      url = 'ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/structure_factors/r%ssf.ent.gz' % code
+      filename = 'r' + code + 'sf.ent.gz'
+      try:
+        urllib.urlretrieve(url, filename)
+        print "Uncompressing r%ssf.ent.gz" % code
+        os.system("gunzip r%ssf.ent.gz" % code)
+      except:
+        print "Error retrieving %s" % url
