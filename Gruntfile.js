@@ -81,3 +81,9 @@ var build = {
 var cite = JSON.parse(fs.readFileSync('./citation.json', {
   encoding: "utf8"
 }));
+
+// To get asset(s) information.
+///----------------------------
+var pkg  = JSON.parse(fs.readFileSync('./package.json', {
+  encoding: "utf8"
+}));
