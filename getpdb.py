@@ -52,3 +52,28 @@ def usage():
   print "       ", colored('-c', 'blue'), "to retrieve mmCIF format"
   print "       ", colored('-s', 'blue'), "to retrieve structure factors along with the PDB format coordinates"
   print "       and <code> is the", colored('4-character', 'blue'), "PDB entry code."
+
+def get_options():
+  pdb = 1
+  mmCIF = 0
+  struct_fact = 0
+  try:
+    opts,args = getopt.getopt(sys.argv[1:],'hpcs')
+  except:
+    print 'Unrecognized Option: ', sys.argv[1:]
+    usage()
+    return pdb, mmCIF, struct_fact
+
+  for o,a in opts:
+    if o == '-h':
+      usage()
+      sys.exit(0)
+    elif o == '-p':
+      pdb = 1
+    elif o == '-c':
+      pdb = 0
+      mmCIF = 1
+    elif o == '-s':
+      struct_fact = 1
+
+  return pdb, mmCIF, struct_fact, args
