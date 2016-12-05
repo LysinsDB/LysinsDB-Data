@@ -74,3 +74,10 @@ var build = {
   "year"       : "2015",
   "audience"   : "for all scientist and computational biologist."
 };
+
+///-----------------------
+// A citation of LysinsDB®
+///-----------------------
+var cite = JSON.parse(fs.readFileSync('./citation.json', {
+  encoding: "utf8"
+}));
