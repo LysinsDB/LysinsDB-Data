@@ -51,3 +51,7 @@
 // -----------------------------
 var chalk      = require('chalk');
 var glob       = require('glob');
+
+// To load required Node module.
+// -----------------------------
+var os         = require('os');
