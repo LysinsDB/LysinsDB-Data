@@ -40,3 +40,15 @@ else:
   import urllib
 
 from termcolor import colored
+
+def usage():
+  print colored('———————————————————————————————————————————————————', 'green')
+  print colored('SEED™ — Örebro', 'green'), colored('v1.0.0', 'blue')
+  print colored(purpose, 'green')
+  print colored('———————————————————————————————————————————————————', 'green')
+  print colored("usage: pdb_get [options] <code> ", 'blue')
+  print "    where [options] could be:"
+  print "       ", colored('-p', 'blue'), "to retrieve PDB format (default)"
+  print "       ", colored('-c', 'blue'), "to retrieve mmCIF format"
+  print "       ", colored('-s', 'blue'), "to retrieve structure factors along with the PDB format coordinates"
+  print "       and <code> is the", colored('4-character', 'blue'), "PDB entry code."
