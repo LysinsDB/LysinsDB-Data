@@ -30,3 +30,4 @@ purpose           = 'Get Proteins from http://www.rcsb.org/pdb/home/home.do'
 import os
 import sys
 import re
+import getopt
