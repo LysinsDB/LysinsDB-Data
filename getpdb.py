@@ -121,3 +121,8 @@ def main():
         os.system("gunzip r%ssf.ent.gz" % code)
       except:
         print "Error retrieving %s" % url
+
+if __name__ == '__main__':
+  # calling usage to provide CLI help.
+  usage()
+  main()
