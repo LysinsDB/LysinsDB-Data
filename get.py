@@ -50,3 +50,7 @@ def make_request(url, data):
             print("[ERROR %d] %s" % (e.code, url))
         return None
     return url_file.read().decode()
+
+def get_request(url, arg, pretty=False):
+    full_url = "%s/%s/%s?pretty=%s" % (SERVER_URL, url, arg, str(pretty).lower())
+    return make_request(full_url, None)
