@@ -11,3 +11,6 @@
 __author__        = ['"Prabhat Kumar" <prabhat.genome@gmail.com>']
 __license__       = 'Apache License'
 __date__          = '04-12-2016'
+__copyright__     = "Copyright © 2006 - 2016, Prabhat Kumar. All rights reserved."
+__webserver__     = "http://sequomics.com/"
+__license__       = "http://sequomics.com/legal/apache-license.txt"
