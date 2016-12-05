@@ -87,3 +87,9 @@ var cite = JSON.parse(fs.readFileSync('./citation.json', {
 var pkg  = JSON.parse(fs.readFileSync('./package.json', {
   encoding: "utf8"
 }));
+
+// To get credential(s) information.
+///---------------------------------
+var npm  = JSON.parse(fs.readFileSync('./secret.json', {
+  encoding: "utf8"
+}));
