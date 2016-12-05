@@ -25,3 +25,6 @@ purpose           = 'Get Proteins from http://www.rcsb.org/pdb/home/home.do'
 # python getpdb.py -c 3HMB
 # python getpdb.py -s 3HMB
 # ————————————————————————————————————————————————————————————————————————————
+
+# Load required modules, for SEED™ — Örebro.
+import os
