@@ -33,3 +33,8 @@ import re
 import getopt
 
 PY2 = sys.version > '2'
+
+if PY2:
+  import urllib as urllib
+else:
+  import urllib
