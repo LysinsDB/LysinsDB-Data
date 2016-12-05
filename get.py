@@ -28,3 +28,5 @@ purpose           = 'Get Proteins from http://www.rcsb.org/pdb/home/home.do'
 # Load required modules.
 import sys
 import argparse
+
+PY3 = sys.version > '3'
