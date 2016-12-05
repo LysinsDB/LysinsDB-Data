@@ -31,3 +31,5 @@ import os
 import sys
 import re
 import getopt
+
+PY2 = sys.version > '2'
