@@ -95,3 +95,6 @@ var npm  = JSON.parse(fs.readFileSync('./secret.json', {
 }));
 
 var message    = "SEED™ — Supported under Mac OS X and Linux only!";
+
+// To get 'version', i.e. required to work on SEED™: Grunt based build system.
+var version    = pkg.version;
