@@ -111,3 +111,6 @@ var banner     =
     ' * Copyright © 2014 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.\n' +
     ' * Released under the Apache License (http://www.apache.org/licenses/).\n' +
     ' */';
+
+// To get 'version' of seed, i.e. required to work on SEED™: Grunt based build system. | See: http://seed.sequomics.com/.
+var info = process.env.VERSION || require('./seed.json').version;
