@@ -38,3 +38,5 @@ if PY2:
   import urllib as urllib
 else:
   import urllib
+
+from termcolor import colored
