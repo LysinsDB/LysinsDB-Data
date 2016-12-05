@@ -1,0 +1,116 @@
+{
+  "4cu5": [
+    {
+      "related_structures": [],
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "assemblies": [
+        {
+          "preferred": true,
+          "form": "homo",
+          "name": "dimer",
+          "assembly_id": "1"
+        },
+        {
+          "preferred": false,
+          "form": "homo",
+          "name": "dimer",
+          "assembly_id": "2"
+        },
+        {
+          "preferred": false,
+          "form": "homo",
+          "name": "dimer",
+          "assembly_id": "3"
+        },
+        {
+          "preferred": false,
+          "form": "homo",
+          "name": "dimer",
+          "assembly_id": "4"
+        }
+      ],
+      "title": "C-terminal domain of endolysin from phage CD27L is a trigger and release factor.",
+      "release_date": "2014-08-06",
+      "split_entry": [],
+      "experimental_method_class": [
+        "x-ray"
+      ],
+      "revision_date": "2014-08-06",
+      "entry_authors": [
+        "Dunne, M.",
+        "Mertens, H.D.T.",
+        "Garefalaki, V.",
+        "Jeffries, C.M.",
+        "Thompson, A.",
+        "Lemke, E.A.",
+        "Svergun, D.I.",
+        "Mayer, M.J.",
+        "Narbad, A.",
+        "Meijers, R."
+      ],
+      "deposition_site": "PDBE",
+      "number_of_entities": {
+        "water": 1,
+        "polypeptide": 1,
+        "other": 0,
+        "dna": 0,
+        "ligand": 0,
+        "dna/rna": 0,
+        "rna": 0,
+        "sugar": 0
+      },
+      "deposition_date": "2014-03-17",
+      "processing_site": "PDBE"
+    }
+  ],
+  "4cu2": [
+    {
+      "related_structures": [],
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "assemblies": [
+        {
+          "preferred": true,
+          "form": "homo",
+          "name": "tetramer",
+          "assembly_id": "1"
+        }
+      ],
+      "title": "C-terminal domain of CTP1L endolysin mutant V195P that reduces autoproteolysis.",
+      "release_date": "2014-08-06",
+      "split_entry": [],
+      "experimental_method_class": [
+        "x-ray"
+      ],
+      "revision_date": "2014-12-17",
+      "entry_authors": [
+        "Dunne, M.",
+        "Mertens, H.D.T.",
+        "Garefalaki, V.",
+        "Jeffries, C.M.",
+        "Thompson, A.",
+        "Lemke, E.A.",
+        "Svergun, D.I.",
+        "Mayer, M.J.",
+        "Narbad, A.",
+        "Meijers, R."
+      ],
+      "deposition_site": "PDBE",
+      "number_of_entities": {
+        "water": 1,
+        "polypeptide": 1,
+        "other": 0,
+        "dna": 0,
+        "ligand": 0,
+        "dna/rna": 0,
+        "rna": 0,
+        "sugar": 0
+      },
+      "deposition_date": "2014-03-16",
+      "processing_site": "PDBE"
+    }
+  ]
+}
