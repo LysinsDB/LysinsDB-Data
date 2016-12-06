@@ -28,3 +28,17 @@
  * --/The Heart of Build System/-- of "LysinsDB®-Data".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  // before generating any new files, remove any previously-created files.
+  tests: ['tmp', '*.temp', '*.log', '*.knit.md', '*.utf8.md', '*.pdb.gz', '*.cif.gz', '*.sf.ent.gz'],
+  // will delete files for `build` target.
+  build: ['build'],
+  // Will NOT delete files for `release` target.
+  release: {
+    options: {
+      'no-write': true
+    },
+    src: ['data']
+  }
+};
