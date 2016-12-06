@@ -28,3 +28,27 @@
  * --/The Heart of Build System/-- of "LysinsDB®-Data".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  options: {
+    curly: true,
+    eqeqeq: true,
+    eqnull: true,
+    browser: true,
+    node: true,
+    unused: true,
+    strict: true,
+    undef: true
+  },
+  ignore_warning: {
+    options: {
+      '-W015': true // [L24:C9] W015: Expected '}' to have an indentation at 11 instead at 9.
+    }
+  },
+  all: [
+    './Gruntfile.js',
+    './lib/**/*.js',
+    './index.js',
+    '!node_modules/**/*.js' // ignores node_modules.
+  ]
+};
