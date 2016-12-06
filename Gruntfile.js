@@ -212,3 +212,9 @@ module.exports = function(grunt) {
   /// Loading all the tasks options in tasks/options base on the name:
   /// watch.js => watch{}
   _.extend(config, loadConfig('./tasks/options/'));
+  
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // Project configuration for -//LysinsDB®-Data//- Build.
+  // Date: 06-12-2016.
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  grunt.initConfig(config);
