@@ -171,3 +171,5 @@ function dateFormat(date, format) {
 // All Grunt Operations Defined... |------------------------------------------| 06/Dec/2016 | SEED™ — Örebro.
 //                           Copyright © 2016, Prabhat Kumar, All rights reserved.
 // ----------------------------------------------------------------------------------------------------------
+
+module.exports = function(grunt) {
