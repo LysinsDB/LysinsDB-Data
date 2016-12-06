@@ -28,3 +28,22 @@
  * --/The Heart of Build System/-- of "LysinsDB®-Data".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  // Used a default pattern of compression for LysinsDB®-Data.
+  main: {
+    options: {
+      // output: --> lysinsdb-data-0.0.1-2016-12-06-dist.zip
+      archive: '<%= pkg.name %>-<%= pkg.version %>-<%= pkg.author %><%= grunt.template.today("yyyy-mm-dd") %>-data.zip',
+      level: 9,
+      pretty: true
+    },
+    files: [
+      {
+        expand: true,
+        src: ['data/**/*.json'],
+        dest: './'
+      }
+    ]
+  }
+};
