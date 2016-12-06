@@ -28,3 +28,15 @@
  * --/The Heart of Build System/-- of "LysinsDB®-Data".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  options: {
+    banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - license: <%= pkg.license %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */',
+    nameCache: './<%= pkg.name %>-uglify-cache.json'
+  },
+  my_target: {
+    files: {
+      './build/script/<%= pkg.name %>.min.js': ['./lib/**/*.js'],
+    }
+  }
+};
