@@ -208,3 +208,7 @@ module.exports = function(grunt) {
   /// Loading Externally-Defined Tasks.
   /// http://gruntjs.com/api/grunt
   grunt.loadTasks('tasks');
+  
+  /// Loading all the tasks options in tasks/options base on the name:
+  /// watch.js => watch{}
+  _.extend(config, loadConfig('./tasks/options/'));
