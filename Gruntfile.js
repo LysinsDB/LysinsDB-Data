@@ -179,3 +179,8 @@ module.exports = function(grunt) {
   
   // Assigning `grunt.util._` to `_`.
   var _ = grunt.util._;
+  
+  // 1. time-grunt ——> $ npm install time-grunt --save-dev
+  // -----------------------------------------------------
+  // Display the elapsed execution time of grunt tasks.
+  require('time-grunt')(grunt);
