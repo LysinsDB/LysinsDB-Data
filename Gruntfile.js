@@ -176,3 +176,6 @@ module.exports = function(grunt) {
   
   // Force use of Unix newlines.
   grunt.util.linefeed = '\n';
+  
+  // Assigning `grunt.util._` to `_`.
+  var _ = grunt.util._;
